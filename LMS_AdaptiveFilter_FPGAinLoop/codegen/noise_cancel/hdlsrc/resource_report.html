@@ -1,0 +1,694 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Resource Utilization Report for 'noise_cancel_fixpt'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file://F:/Softwares/MATLAB2017/MATLAB2017/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+ <BR/> <BR/><DIV ><H1>HDL Resource Utilization Report ('noise_cancel_fixpt')</H1>
+</H1>
+<BR><H2>Generated on 2017-04-29 19:08:22</h2></DIV>
+<br /><H3><B> Summary </B></H3><DIV  class="content_container"><TABLE class="table_header"><TR style="background-color: #eeeeff">
+<TD style="border-style: none" ><H4>Multipliers</H4></TD>
+<TD style="border-style: none" ><H4>356</H4></TD>
+</TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" ><H4>Adders/Subtractors</H4></TD>
+<TD style="border-style: none" ><H4>3204</H4></TD>
+</TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" ><H4>Registers</H4></TD>
+<TD style="border-style: none" ><H4>0</H4></TD>
+</TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" ><H4>Total 1 Bit Registers</H4></TD>
+<TD style="border-style: none" ><H4>0</H4></TD>
+</TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" ><H4>RAMs</H4></TD>
+<TD style="border-style: none" ><H4>0</H4></TD>
+</TR>
+<TR style="background-color: #ffffff">
+<TD style="border-style: none" ><H4>Multiplexers</H4></TD>
+<TD style="border-style: none" ><H4>0</H4></TD>
+</TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" ><H4>I/O Bits</H4></TD>
+<TD style="border-style: none" ><H4>7868</H4></TD>
+</TR>
+<TR style="background-color: #eeeeff">
+<TD style="border-style: none" ><H4>Shifters</H4></TD>
+<TD style="border-style: none" ><H4>0</H4></TD>
+</TR>
+</TABLE></DIV><br /><br />
+<h3>Multipliers (356)</h3>
+<ul><li><H4> 14x14-bit Multipliers 							: 356</H4></li>
+</ul>
+<h3>Adders/Subtractors (3204)</h3>
+<ul><li><H4> 32x32-bit Adders 							: 267</H4></li>
+<li><H4> 11x11-bit Adders 							: 445</H4></li>
+<li><H4> 12x12-bit Adders 							: 178</H4></li>
+<li><H4> 30x30-bit Adders 							: 178</H4></li>
+<li><H4> 13x13-bit Subtractors 							: 445</H4></li>
+<li><H4> 13x32-bit Subtractors 							: 445</H4></li>
+<li><H4> 10x32-bit Subtractors 							: 890</H4></li>
+<li><H4> 19x19-bit Subtractors 							: 178</H4></li>
+<li><H4> 12x32-bit Subtractors 							: 178</H4></li>
+</ul>
+<h3>I/O Bits (7868)</h3>
+<table>
+<tr><td align="center"></td>
+<td><h3 style="background-color: #eeeeff">Input Bits (5334)</h3>
+<ul><li><H4> s_0 							: 14  bits</H4></li>
+<li><H4> s_1 							: 14  bits</H4></li>
+<li><H4> s_2 							: 14  bits</H4></li>
+<li><H4> s_3 							: 14  bits</H4></li>
+<li><H4> s_4 							: 14  bits</H4></li>
+<li><H4> s_5 							: 14  bits</H4></li>
+<li><H4> s_6 							: 14  bits</H4></li>
+<li><H4> s_7 							: 14  bits</H4></li>
+<li><H4> s_8 							: 14  bits</H4></li>
+<li><H4> s_9 							: 14  bits</H4></li>
+<li><H4> s_10 							: 14  bits</H4></li>
+<li><H4> s_11 							: 14  bits</H4></li>
+<li><H4> s_12 							: 14  bits</H4></li>
+<li><H4> s_13 							: 14  bits</H4></li>
+<li><H4> s_14 							: 14  bits</H4></li>
+<li><H4> s_15 							: 14  bits</H4></li>
+<li><H4> s_16 							: 14  bits</H4></li>
+<li><H4> s_17 							: 14  bits</H4></li>
+<li><H4> s_18 							: 14  bits</H4></li>
+<li><H4> s_19 							: 14  bits</H4></li>
+<li><H4> s_20 							: 14  bits</H4></li>
+<li><H4> s_21 							: 14  bits</H4></li>
+<li><H4> s_22 							: 14  bits</H4></li>
+<li><H4> s_23 							: 14  bits</H4></li>
+<li><H4> s_24 							: 14  bits</H4></li>
+<li><H4> s_25 							: 14  bits</H4></li>
+<li><H4> s_26 							: 14  bits</H4></li>
+<li><H4> s_27 							: 14  bits</H4></li>
+<li><H4> s_28 							: 14  bits</H4></li>
+<li><H4> s_29 							: 14  bits</H4></li>
+<li><H4> s_30 							: 14  bits</H4></li>
+<li><H4> s_31 							: 14  bits</H4></li>
+<li><H4> s_32 							: 14  bits</H4></li>
+<li><H4> s_33 							: 14  bits</H4></li>
+<li><H4> s_34 							: 14  bits</H4></li>
+<li><H4> s_35 							: 14  bits</H4></li>
+<li><H4> s_36 							: 14  bits</H4></li>
+<li><H4> s_37 							: 14  bits</H4></li>
+<li><H4> s_38 							: 14  bits</H4></li>
+<li><H4> s_39 							: 14  bits</H4></li>
+<li><H4> s_40 							: 14  bits</H4></li>
+<li><H4> s_41 							: 14  bits</H4></li>
+<li><H4> s_42 							: 14  bits</H4></li>
+<li><H4> s_43 							: 14  bits</H4></li>
+<li><H4> s_44 							: 14  bits</H4></li>
+<li><H4> s_45 							: 14  bits</H4></li>
+<li><H4> s_46 							: 14  bits</H4></li>
+<li><H4> s_47 							: 14  bits</H4></li>
+<li><H4> s_48 							: 14  bits</H4></li>
+<li><H4> s_49 							: 14  bits</H4></li>
+<li><H4> s_50 							: 14  bits</H4></li>
+<li><H4> s_51 							: 14  bits</H4></li>
+<li><H4> s_52 							: 14  bits</H4></li>
+<li><H4> s_53 							: 14  bits</H4></li>
+<li><H4> s_54 							: 14  bits</H4></li>
+<li><H4> s_55 							: 14  bits</H4></li>
+<li><H4> s_56 							: 14  bits</H4></li>
+<li><H4> s_57 							: 14  bits</H4></li>
+<li><H4> s_58 							: 14  bits</H4></li>
+<li><H4> s_59 							: 14  bits</H4></li>
+<li><H4> s_60 							: 14  bits</H4></li>
+<li><H4> s_61 							: 14  bits</H4></li>
+<li><H4> s_62 							: 14  bits</H4></li>
+<li><H4> s_63 							: 14  bits</H4></li>
+<li><H4> s_64 							: 14  bits</H4></li>
+<li><H4> s_65 							: 14  bits</H4></li>
+<li><H4> s_66 							: 14  bits</H4></li>
+<li><H4> s_67 							: 14  bits</H4></li>
+<li><H4> s_68 							: 14  bits</H4></li>
+<li><H4> s_69 							: 14  bits</H4></li>
+<li><H4> s_70 							: 14  bits</H4></li>
+<li><H4> s_71 							: 14  bits</H4></li>
+<li><H4> s_72 							: 14  bits</H4></li>
+<li><H4> s_73 							: 14  bits</H4></li>
+<li><H4> s_74 							: 14  bits</H4></li>
+<li><H4> s_75 							: 14  bits</H4></li>
+<li><H4> s_76 							: 14  bits</H4></li>
+<li><H4> s_77 							: 14  bits</H4></li>
+<li><H4> s_78 							: 14  bits</H4></li>
+<li><H4> s_79 							: 14  bits</H4></li>
+<li><H4> s_80 							: 14  bits</H4></li>
+<li><H4> s_81 							: 14  bits</H4></li>
+<li><H4> s_82 							: 14  bits</H4></li>
+<li><H4> s_83 							: 14  bits</H4></li>
+<li><H4> s_84 							: 14  bits</H4></li>
+<li><H4> s_85 							: 14  bits</H4></li>
+<li><H4> s_86 							: 14  bits</H4></li>
+<li><H4> s_87 							: 14  bits</H4></li>
+<li><H4> s_88 							: 14  bits</H4></li>
+<li><H4> s_89 							: 14  bits</H4></li>
+<li><H4> s_90 							: 14  bits</H4></li>
+<li><H4> s_91 							: 14  bits</H4></li>
+<li><H4> s_92 							: 14  bits</H4></li>
+<li><H4> s_93 							: 14  bits</H4></li>
+<li><H4> s_94 							: 14  bits</H4></li>
+<li><H4> s_95 							: 14  bits</H4></li>
+<li><H4> s_96 							: 14  bits</H4></li>
+<li><H4> s_97 							: 14  bits</H4></li>
+<li><H4> s_98 							: 14  bits</H4></li>
+<li><H4> s_99 							: 14  bits</H4></li>
+<li><H4> n_0 							: 14  bits</H4></li>
+<li><H4> n_1 							: 14  bits</H4></li>
+<li><H4> n_2 							: 14  bits</H4></li>
+<li><H4> n_3 							: 14  bits</H4></li>
+<li><H4> n_4 							: 14  bits</H4></li>
+<li><H4> n_5 							: 14  bits</H4></li>
+<li><H4> n_6 							: 14  bits</H4></li>
+<li><H4> n_7 							: 14  bits</H4></li>
+<li><H4> n_8 							: 14  bits</H4></li>
+<li><H4> n_9 							: 14  bits</H4></li>
+<li><H4> n_10 							: 14  bits</H4></li>
+<li><H4> n_11 							: 14  bits</H4></li>
+<li><H4> n_12 							: 14  bits</H4></li>
+<li><H4> n_13 							: 14  bits</H4></li>
+<li><H4> n_14 							: 14  bits</H4></li>
+<li><H4> n_15 							: 14  bits</H4></li>
+<li><H4> n_16 							: 14  bits</H4></li>
+<li><H4> n_17 							: 14  bits</H4></li>
+<li><H4> n_18 							: 14  bits</H4></li>
+<li><H4> n_19 							: 14  bits</H4></li>
+<li><H4> n_20 							: 14  bits</H4></li>
+<li><H4> n_21 							: 14  bits</H4></li>
+<li><H4> n_22 							: 14  bits</H4></li>
+<li><H4> n_23 							: 14  bits</H4></li>
+<li><H4> n_24 							: 14  bits</H4></li>
+<li><H4> n_25 							: 14  bits</H4></li>
+<li><H4> n_26 							: 14  bits</H4></li>
+<li><H4> n_27 							: 14  bits</H4></li>
+<li><H4> n_28 							: 14  bits</H4></li>
+<li><H4> n_29 							: 14  bits</H4></li>
+<li><H4> n_30 							: 14  bits</H4></li>
+<li><H4> n_31 							: 14  bits</H4></li>
+<li><H4> n_32 							: 14  bits</H4></li>
+<li><H4> n_33 							: 14  bits</H4></li>
+<li><H4> n_34 							: 14  bits</H4></li>
+<li><H4> n_35 							: 14  bits</H4></li>
+<li><H4> n_36 							: 14  bits</H4></li>
+<li><H4> n_37 							: 14  bits</H4></li>
+<li><H4> n_38 							: 14  bits</H4></li>
+<li><H4> n_39 							: 14  bits</H4></li>
+<li><H4> n_40 							: 14  bits</H4></li>
+<li><H4> n_41 							: 14  bits</H4></li>
+<li><H4> n_42 							: 14  bits</H4></li>
+<li><H4> n_43 							: 14  bits</H4></li>
+<li><H4> n_44 							: 14  bits</H4></li>
+<li><H4> n_45 							: 14  bits</H4></li>
+<li><H4> n_46 							: 14  bits</H4></li>
+<li><H4> n_47 							: 14  bits</H4></li>
+<li><H4> n_48 							: 14  bits</H4></li>
+<li><H4> n_49 							: 14  bits</H4></li>
+<li><H4> n_50 							: 14  bits</H4></li>
+<li><H4> n_51 							: 14  bits</H4></li>
+<li><H4> n_52 							: 14  bits</H4></li>
+<li><H4> n_53 							: 14  bits</H4></li>
+<li><H4> n_54 							: 14  bits</H4></li>
+<li><H4> n_55 							: 14  bits</H4></li>
+<li><H4> n_56 							: 14  bits</H4></li>
+<li><H4> n_57 							: 14  bits</H4></li>
+<li><H4> n_58 							: 14  bits</H4></li>
+<li><H4> n_59 							: 14  bits</H4></li>
+<li><H4> n_60 							: 14  bits</H4></li>
+<li><H4> n_61 							: 14  bits</H4></li>
+<li><H4> n_62 							: 14  bits</H4></li>
+<li><H4> n_63 							: 14  bits</H4></li>
+<li><H4> n_64 							: 14  bits</H4></li>
+<li><H4> n_65 							: 14  bits</H4></li>
+<li><H4> n_66 							: 14  bits</H4></li>
+<li><H4> n_67 							: 14  bits</H4></li>
+<li><H4> n_68 							: 14  bits</H4></li>
+<li><H4> n_69 							: 14  bits</H4></li>
+<li><H4> n_70 							: 14  bits</H4></li>
+<li><H4> n_71 							: 14  bits</H4></li>
+<li><H4> n_72 							: 14  bits</H4></li>
+<li><H4> n_73 							: 14  bits</H4></li>
+<li><H4> n_74 							: 14  bits</H4></li>
+<li><H4> n_75 							: 14  bits</H4></li>
+<li><H4> n_76 							: 14  bits</H4></li>
+<li><H4> n_77 							: 14  bits</H4></li>
+<li><H4> n_78 							: 14  bits</H4></li>
+<li><H4> n_79 							: 14  bits</H4></li>
+<li><H4> n_80 							: 14  bits</H4></li>
+<li><H4> n_81 							: 14  bits</H4></li>
+<li><H4> n_82 							: 14  bits</H4></li>
+<li><H4> n_83 							: 14  bits</H4></li>
+<li><H4> n_84 							: 14  bits</H4></li>
+<li><H4> n_85 							: 14  bits</H4></li>
+<li><H4> n_86 							: 14  bits</H4></li>
+<li><H4> n_87 							: 14  bits</H4></li>
+<li><H4> n_88 							: 14  bits</H4></li>
+<li><H4> n_89 							: 14  bits</H4></li>
+<li><H4> n_90 							: 14  bits</H4></li>
+<li><H4> n_91 							: 14  bits</H4></li>
+<li><H4> n_92 							: 14  bits</H4></li>
+<li><H4> n_93 							: 14  bits</H4></li>
+<li><H4> n_94 							: 14  bits</H4></li>
+<li><H4> n_95 							: 14  bits</H4></li>
+<li><H4> n_96 							: 14  bits</H4></li>
+<li><H4> n_97 							: 14  bits</H4></li>
+<li><H4> n_98 							: 14  bits</H4></li>
+<li><H4> n_99 							: 14  bits</H4></li>
+<li><H4> e_1_0 							: 14  bits</H4></li>
+<li><H4> e_1_1 							: 14  bits</H4></li>
+<li><H4> e_1_2 							: 14  bits</H4></li>
+<li><H4> e_1_3 							: 14  bits</H4></li>
+<li><H4> e_1_4 							: 14  bits</H4></li>
+<li><H4> e_1_5 							: 14  bits</H4></li>
+<li><H4> e_1_6 							: 14  bits</H4></li>
+<li><H4> e_1_7 							: 14  bits</H4></li>
+<li><H4> e_1_8 							: 14  bits</H4></li>
+<li><H4> e_1_9 							: 14  bits</H4></li>
+<li><H4> e_1_10 							: 14  bits</H4></li>
+<li><H4> e_1_11 							: 14  bits</H4></li>
+<li><H4> e_1_12 							: 14  bits</H4></li>
+<li><H4> e_1_13 							: 14  bits</H4></li>
+<li><H4> e_1_14 							: 14  bits</H4></li>
+<li><H4> e_1_15 							: 14  bits</H4></li>
+<li><H4> e_1_16 							: 14  bits</H4></li>
+<li><H4> e_1_17 							: 14  bits</H4></li>
+<li><H4> e_1_18 							: 14  bits</H4></li>
+<li><H4> e_1_19 							: 14  bits</H4></li>
+<li><H4> e_1_20 							: 14  bits</H4></li>
+<li><H4> e_1_21 							: 14  bits</H4></li>
+<li><H4> e_1_22 							: 14  bits</H4></li>
+<li><H4> e_1_23 							: 14  bits</H4></li>
+<li><H4> e_1_24 							: 14  bits</H4></li>
+<li><H4> e_1_25 							: 14  bits</H4></li>
+<li><H4> e_1_26 							: 14  bits</H4></li>
+<li><H4> e_1_27 							: 14  bits</H4></li>
+<li><H4> e_1_28 							: 14  bits</H4></li>
+<li><H4> e_1_29 							: 14  bits</H4></li>
+<li><H4> e_1_30 							: 14  bits</H4></li>
+<li><H4> e_1_31 							: 14  bits</H4></li>
+<li><H4> e_1_32 							: 14  bits</H4></li>
+<li><H4> e_1_33 							: 14  bits</H4></li>
+<li><H4> e_1_34 							: 14  bits</H4></li>
+<li><H4> e_1_35 							: 14  bits</H4></li>
+<li><H4> e_1_36 							: 14  bits</H4></li>
+<li><H4> e_1_37 							: 14  bits</H4></li>
+<li><H4> e_1_38 							: 14  bits</H4></li>
+<li><H4> e_1_39 							: 14  bits</H4></li>
+<li><H4> e_1_40 							: 14  bits</H4></li>
+<li><H4> e_1_41 							: 14  bits</H4></li>
+<li><H4> e_1_42 							: 14  bits</H4></li>
+<li><H4> e_1_43 							: 14  bits</H4></li>
+<li><H4> e_1_44 							: 14  bits</H4></li>
+<li><H4> e_1_45 							: 14  bits</H4></li>
+<li><H4> e_1_46 							: 14  bits</H4></li>
+<li><H4> e_1_47 							: 14  bits</H4></li>
+<li><H4> e_1_48 							: 14  bits</H4></li>
+<li><H4> e_1_49 							: 14  bits</H4></li>
+<li><H4> e_1_50 							: 14  bits</H4></li>
+<li><H4> e_1_51 							: 14  bits</H4></li>
+<li><H4> e_1_52 							: 14  bits</H4></li>
+<li><H4> e_1_53 							: 14  bits</H4></li>
+<li><H4> e_1_54 							: 14  bits</H4></li>
+<li><H4> e_1_55 							: 14  bits</H4></li>
+<li><H4> e_1_56 							: 14  bits</H4></li>
+<li><H4> e_1_57 							: 14  bits</H4></li>
+<li><H4> e_1_58 							: 14  bits</H4></li>
+<li><H4> e_1_59 							: 14  bits</H4></li>
+<li><H4> e_1_60 							: 14  bits</H4></li>
+<li><H4> e_1_61 							: 14  bits</H4></li>
+<li><H4> e_1_62 							: 14  bits</H4></li>
+<li><H4> e_1_63 							: 14  bits</H4></li>
+<li><H4> e_1_64 							: 14  bits</H4></li>
+<li><H4> e_1_65 							: 14  bits</H4></li>
+<li><H4> e_1_66 							: 14  bits</H4></li>
+<li><H4> e_1_67 							: 14  bits</H4></li>
+<li><H4> e_1_68 							: 14  bits</H4></li>
+<li><H4> e_1_69 							: 14  bits</H4></li>
+<li><H4> e_1_70 							: 14  bits</H4></li>
+<li><H4> e_1_71 							: 14  bits</H4></li>
+<li><H4> e_1_72 							: 14  bits</H4></li>
+<li><H4> e_1_73 							: 14  bits</H4></li>
+<li><H4> e_1_74 							: 14  bits</H4></li>
+<li><H4> e_1_75 							: 14  bits</H4></li>
+<li><H4> e_1_76 							: 14  bits</H4></li>
+<li><H4> e_1_77 							: 14  bits</H4></li>
+<li><H4> e_1_78 							: 14  bits</H4></li>
+<li><H4> e_1_79 							: 14  bits</H4></li>
+<li><H4> e_1_80 							: 14  bits</H4></li>
+<li><H4> e_1_81 							: 14  bits</H4></li>
+<li><H4> e_1_82 							: 14  bits</H4></li>
+<li><H4> e_1_83 							: 14  bits</H4></li>
+<li><H4> e_1_84 							: 14  bits</H4></li>
+<li><H4> e_1_85 							: 14  bits</H4></li>
+<li><H4> e_1_86 							: 14  bits</H4></li>
+<li><H4> e_1_87 							: 14  bits</H4></li>
+<li><H4> e_1_88 							: 14  bits</H4></li>
+<li><H4> e_1_89 							: 14  bits</H4></li>
+<li><H4> W_1 							: 14  bits</H4></li>
+<li><H4> bhat_1_0 							: 14  bits</H4></li>
+<li><H4> bhat_1_1 							: 14  bits</H4></li>
+<li><H4> bhat_1_2 							: 14  bits</H4></li>
+<li><H4> bhat_1_3 							: 14  bits</H4></li>
+<li><H4> bhat_1_4 							: 14  bits</H4></li>
+<li><H4> bhat_1_5 							: 14  bits</H4></li>
+<li><H4> bhat_1_6 							: 14  bits</H4></li>
+<li><H4> bhat_1_7 							: 14  bits</H4></li>
+<li><H4> bhat_1_8 							: 14  bits</H4></li>
+<li><H4> bhat_1_9 							: 14  bits</H4></li>
+<li><H4> bhat_1_10 							: 14  bits</H4></li>
+<li><H4> bhat_1_11 							: 14  bits</H4></li>
+<li><H4> bhat_1_12 							: 14  bits</H4></li>
+<li><H4> bhat_1_13 							: 14  bits</H4></li>
+<li><H4> bhat_1_14 							: 14  bits</H4></li>
+<li><H4> bhat_1_15 							: 14  bits</H4></li>
+<li><H4> bhat_1_16 							: 14  bits</H4></li>
+<li><H4> bhat_1_17 							: 14  bits</H4></li>
+<li><H4> bhat_1_18 							: 14  bits</H4></li>
+<li><H4> bhat_1_19 							: 14  bits</H4></li>
+<li><H4> bhat_1_20 							: 14  bits</H4></li>
+<li><H4> bhat_1_21 							: 14  bits</H4></li>
+<li><H4> bhat_1_22 							: 14  bits</H4></li>
+<li><H4> bhat_1_23 							: 14  bits</H4></li>
+<li><H4> bhat_1_24 							: 14  bits</H4></li>
+<li><H4> bhat_1_25 							: 14  bits</H4></li>
+<li><H4> bhat_1_26 							: 14  bits</H4></li>
+<li><H4> bhat_1_27 							: 14  bits</H4></li>
+<li><H4> bhat_1_28 							: 14  bits</H4></li>
+<li><H4> bhat_1_29 							: 14  bits</H4></li>
+<li><H4> bhat_1_30 							: 14  bits</H4></li>
+<li><H4> bhat_1_31 							: 14  bits</H4></li>
+<li><H4> bhat_1_32 							: 14  bits</H4></li>
+<li><H4> bhat_1_33 							: 14  bits</H4></li>
+<li><H4> bhat_1_34 							: 14  bits</H4></li>
+<li><H4> bhat_1_35 							: 14  bits</H4></li>
+<li><H4> bhat_1_36 							: 14  bits</H4></li>
+<li><H4> bhat_1_37 							: 14  bits</H4></li>
+<li><H4> bhat_1_38 							: 14  bits</H4></li>
+<li><H4> bhat_1_39 							: 14  bits</H4></li>
+<li><H4> bhat_1_40 							: 14  bits</H4></li>
+<li><H4> bhat_1_41 							: 14  bits</H4></li>
+<li><H4> bhat_1_42 							: 14  bits</H4></li>
+<li><H4> bhat_1_43 							: 14  bits</H4></li>
+<li><H4> bhat_1_44 							: 14  bits</H4></li>
+<li><H4> bhat_1_45 							: 14  bits</H4></li>
+<li><H4> bhat_1_46 							: 14  bits</H4></li>
+<li><H4> bhat_1_47 							: 14  bits</H4></li>
+<li><H4> bhat_1_48 							: 14  bits</H4></li>
+<li><H4> bhat_1_49 							: 14  bits</H4></li>
+<li><H4> bhat_1_50 							: 14  bits</H4></li>
+<li><H4> bhat_1_51 							: 14  bits</H4></li>
+<li><H4> bhat_1_52 							: 14  bits</H4></li>
+<li><H4> bhat_1_53 							: 14  bits</H4></li>
+<li><H4> bhat_1_54 							: 14  bits</H4></li>
+<li><H4> bhat_1_55 							: 14  bits</H4></li>
+<li><H4> bhat_1_56 							: 14  bits</H4></li>
+<li><H4> bhat_1_57 							: 14  bits</H4></li>
+<li><H4> bhat_1_58 							: 14  bits</H4></li>
+<li><H4> bhat_1_59 							: 14  bits</H4></li>
+<li><H4> bhat_1_60 							: 14  bits</H4></li>
+<li><H4> bhat_1_61 							: 14  bits</H4></li>
+<li><H4> bhat_1_62 							: 14  bits</H4></li>
+<li><H4> bhat_1_63 							: 14  bits</H4></li>
+<li><H4> bhat_1_64 							: 14  bits</H4></li>
+<li><H4> bhat_1_65 							: 14  bits</H4></li>
+<li><H4> bhat_1_66 							: 14  bits</H4></li>
+<li><H4> bhat_1_67 							: 14  bits</H4></li>
+<li><H4> bhat_1_68 							: 14  bits</H4></li>
+<li><H4> bhat_1_69 							: 14  bits</H4></li>
+<li><H4> bhat_1_70 							: 14  bits</H4></li>
+<li><H4> bhat_1_71 							: 14  bits</H4></li>
+<li><H4> bhat_1_72 							: 14  bits</H4></li>
+<li><H4> bhat_1_73 							: 14  bits</H4></li>
+<li><H4> bhat_1_74 							: 14  bits</H4></li>
+<li><H4> bhat_1_75 							: 14  bits</H4></li>
+<li><H4> bhat_1_76 							: 14  bits</H4></li>
+<li><H4> bhat_1_77 							: 14  bits</H4></li>
+<li><H4> bhat_1_78 							: 14  bits</H4></li>
+<li><H4> bhat_1_79 							: 14  bits</H4></li>
+<li><H4> bhat_1_80 							: 14  bits</H4></li>
+<li><H4> bhat_1_81 							: 14  bits</H4></li>
+<li><H4> bhat_1_82 							: 14  bits</H4></li>
+<li><H4> bhat_1_83 							: 14  bits</H4></li>
+<li><H4> bhat_1_84 							: 14  bits</H4></li>
+<li><H4> bhat_1_85 							: 14  bits</H4></li>
+<li><H4> bhat_1_86 							: 14  bits</H4></li>
+<li><H4> bhat_1_87 							: 14  bits</H4></li>
+<li><H4> bhat_1_88 							: 14  bits</H4></li>
+<li><H4> bhat_1_89 							: 14  bits</H4></li>
+</ul>
+</td></tr><tr><td align="center"></td>
+<td><h3 style="background-color: #eeeeff">Output Bits (2534)</h3>
+<ul><li><H4> e_0 							: 14  bits</H4></li>
+<li><H4> e_1 							: 14  bits</H4></li>
+<li><H4> e_2 							: 14  bits</H4></li>
+<li><H4> e_3 							: 14  bits</H4></li>
+<li><H4> e_4 							: 14  bits</H4></li>
+<li><H4> e_5 							: 14  bits</H4></li>
+<li><H4> e_6 							: 14  bits</H4></li>
+<li><H4> e_7 							: 14  bits</H4></li>
+<li><H4> e_8 							: 14  bits</H4></li>
+<li><H4> e_9 							: 14  bits</H4></li>
+<li><H4> e_10 							: 14  bits</H4></li>
+<li><H4> e_11 							: 14  bits</H4></li>
+<li><H4> e_12 							: 14  bits</H4></li>
+<li><H4> e_13 							: 14  bits</H4></li>
+<li><H4> e_14 							: 14  bits</H4></li>
+<li><H4> e_15 							: 14  bits</H4></li>
+<li><H4> e_16 							: 14  bits</H4></li>
+<li><H4> e_17 							: 14  bits</H4></li>
+<li><H4> e_18 							: 14  bits</H4></li>
+<li><H4> e_19 							: 14  bits</H4></li>
+<li><H4> e_20 							: 14  bits</H4></li>
+<li><H4> e_21 							: 14  bits</H4></li>
+<li><H4> e_22 							: 14  bits</H4></li>
+<li><H4> e_23 							: 14  bits</H4></li>
+<li><H4> e_24 							: 14  bits</H4></li>
+<li><H4> e_25 							: 14  bits</H4></li>
+<li><H4> e_26 							: 14  bits</H4></li>
+<li><H4> e_27 							: 14  bits</H4></li>
+<li><H4> e_28 							: 14  bits</H4></li>
+<li><H4> e_29 							: 14  bits</H4></li>
+<li><H4> e_30 							: 14  bits</H4></li>
+<li><H4> e_31 							: 14  bits</H4></li>
+<li><H4> e_32 							: 14  bits</H4></li>
+<li><H4> e_33 							: 14  bits</H4></li>
+<li><H4> e_34 							: 14  bits</H4></li>
+<li><H4> e_35 							: 14  bits</H4></li>
+<li><H4> e_36 							: 14  bits</H4></li>
+<li><H4> e_37 							: 14  bits</H4></li>
+<li><H4> e_38 							: 14  bits</H4></li>
+<li><H4> e_39 							: 14  bits</H4></li>
+<li><H4> e_40 							: 14  bits</H4></li>
+<li><H4> e_41 							: 14  bits</H4></li>
+<li><H4> e_42 							: 14  bits</H4></li>
+<li><H4> e_43 							: 14  bits</H4></li>
+<li><H4> e_44 							: 14  bits</H4></li>
+<li><H4> e_45 							: 14  bits</H4></li>
+<li><H4> e_46 							: 14  bits</H4></li>
+<li><H4> e_47 							: 14  bits</H4></li>
+<li><H4> e_48 							: 14  bits</H4></li>
+<li><H4> e_49 							: 14  bits</H4></li>
+<li><H4> e_50 							: 14  bits</H4></li>
+<li><H4> e_51 							: 14  bits</H4></li>
+<li><H4> e_52 							: 14  bits</H4></li>
+<li><H4> e_53 							: 14  bits</H4></li>
+<li><H4> e_54 							: 14  bits</H4></li>
+<li><H4> e_55 							: 14  bits</H4></li>
+<li><H4> e_56 							: 14  bits</H4></li>
+<li><H4> e_57 							: 14  bits</H4></li>
+<li><H4> e_58 							: 14  bits</H4></li>
+<li><H4> e_59 							: 14  bits</H4></li>
+<li><H4> e_60 							: 14  bits</H4></li>
+<li><H4> e_61 							: 14  bits</H4></li>
+<li><H4> e_62 							: 14  bits</H4></li>
+<li><H4> e_63 							: 14  bits</H4></li>
+<li><H4> e_64 							: 14  bits</H4></li>
+<li><H4> e_65 							: 14  bits</H4></li>
+<li><H4> e_66 							: 14  bits</H4></li>
+<li><H4> e_67 							: 14  bits</H4></li>
+<li><H4> e_68 							: 14  bits</H4></li>
+<li><H4> e_69 							: 14  bits</H4></li>
+<li><H4> e_70 							: 14  bits</H4></li>
+<li><H4> e_71 							: 14  bits</H4></li>
+<li><H4> e_72 							: 14  bits</H4></li>
+<li><H4> e_73 							: 14  bits</H4></li>
+<li><H4> e_74 							: 14  bits</H4></li>
+<li><H4> e_75 							: 14  bits</H4></li>
+<li><H4> e_76 							: 14  bits</H4></li>
+<li><H4> e_77 							: 14  bits</H4></li>
+<li><H4> e_78 							: 14  bits</H4></li>
+<li><H4> e_79 							: 14  bits</H4></li>
+<li><H4> e_80 							: 14  bits</H4></li>
+<li><H4> e_81 							: 14  bits</H4></li>
+<li><H4> e_82 							: 14  bits</H4></li>
+<li><H4> e_83 							: 14  bits</H4></li>
+<li><H4> e_84 							: 14  bits</H4></li>
+<li><H4> e_85 							: 14  bits</H4></li>
+<li><H4> e_86 							: 14  bits</H4></li>
+<li><H4> e_87 							: 14  bits</H4></li>
+<li><H4> e_88 							: 14  bits</H4></li>
+<li><H4> e_89 							: 14  bits</H4></li>
+<li><H4> W 							: 14  bits</H4></li>
+<li><H4> bhat_0 							: 14  bits</H4></li>
+<li><H4> bhat_1 							: 14  bits</H4></li>
+<li><H4> bhat_2 							: 14  bits</H4></li>
+<li><H4> bhat_3 							: 14  bits</H4></li>
+<li><H4> bhat_4 							: 14  bits</H4></li>
+<li><H4> bhat_5 							: 14  bits</H4></li>
+<li><H4> bhat_6 							: 14  bits</H4></li>
+<li><H4> bhat_7 							: 14  bits</H4></li>
+<li><H4> bhat_8 							: 14  bits</H4></li>
+<li><H4> bhat_9 							: 14  bits</H4></li>
+<li><H4> bhat_10 							: 14  bits</H4></li>
+<li><H4> bhat_11 							: 14  bits</H4></li>
+<li><H4> bhat_12 							: 14  bits</H4></li>
+<li><H4> bhat_13 							: 14  bits</H4></li>
+<li><H4> bhat_14 							: 14  bits</H4></li>
+<li><H4> bhat_15 							: 14  bits</H4></li>
+<li><H4> bhat_16 							: 14  bits</H4></li>
+<li><H4> bhat_17 							: 14  bits</H4></li>
+<li><H4> bhat_18 							: 14  bits</H4></li>
+<li><H4> bhat_19 							: 14  bits</H4></li>
+<li><H4> bhat_20 							: 14  bits</H4></li>
+<li><H4> bhat_21 							: 14  bits</H4></li>
+<li><H4> bhat_22 							: 14  bits</H4></li>
+<li><H4> bhat_23 							: 14  bits</H4></li>
+<li><H4> bhat_24 							: 14  bits</H4></li>
+<li><H4> bhat_25 							: 14  bits</H4></li>
+<li><H4> bhat_26 							: 14  bits</H4></li>
+<li><H4> bhat_27 							: 14  bits</H4></li>
+<li><H4> bhat_28 							: 14  bits</H4></li>
+<li><H4> bhat_29 							: 14  bits</H4></li>
+<li><H4> bhat_30 							: 14  bits</H4></li>
+<li><H4> bhat_31 							: 14  bits</H4></li>
+<li><H4> bhat_32 							: 14  bits</H4></li>
+<li><H4> bhat_33 							: 14  bits</H4></li>
+<li><H4> bhat_34 							: 14  bits</H4></li>
+<li><H4> bhat_35 							: 14  bits</H4></li>
+<li><H4> bhat_36 							: 14  bits</H4></li>
+<li><H4> bhat_37 							: 14  bits</H4></li>
+<li><H4> bhat_38 							: 14  bits</H4></li>
+<li><H4> bhat_39 							: 14  bits</H4></li>
+<li><H4> bhat_40 							: 14  bits</H4></li>
+<li><H4> bhat_41 							: 14  bits</H4></li>
+<li><H4> bhat_42 							: 14  bits</H4></li>
+<li><H4> bhat_43 							: 14  bits</H4></li>
+<li><H4> bhat_44 							: 14  bits</H4></li>
+<li><H4> bhat_45 							: 14  bits</H4></li>
+<li><H4> bhat_46 							: 14  bits</H4></li>
+<li><H4> bhat_47 							: 14  bits</H4></li>
+<li><H4> bhat_48 							: 14  bits</H4></li>
+<li><H4> bhat_49 							: 14  bits</H4></li>
+<li><H4> bhat_50 							: 14  bits</H4></li>
+<li><H4> bhat_51 							: 14  bits</H4></li>
+<li><H4> bhat_52 							: 14  bits</H4></li>
+<li><H4> bhat_53 							: 14  bits</H4></li>
+<li><H4> bhat_54 							: 14  bits</H4></li>
+<li><H4> bhat_55 							: 14  bits</H4></li>
+<li><H4> bhat_56 							: 14  bits</H4></li>
+<li><H4> bhat_57 							: 14  bits</H4></li>
+<li><H4> bhat_58 							: 14  bits</H4></li>
+<li><H4> bhat_59 							: 14  bits</H4></li>
+<li><H4> bhat_60 							: 14  bits</H4></li>
+<li><H4> bhat_61 							: 14  bits</H4></li>
+<li><H4> bhat_62 							: 14  bits</H4></li>
+<li><H4> bhat_63 							: 14  bits</H4></li>
+<li><H4> bhat_64 							: 14  bits</H4></li>
+<li><H4> bhat_65 							: 14  bits</H4></li>
+<li><H4> bhat_66 							: 14  bits</H4></li>
+<li><H4> bhat_67 							: 14  bits</H4></li>
+<li><H4> bhat_68 							: 14  bits</H4></li>
+<li><H4> bhat_69 							: 14  bits</H4></li>
+<li><H4> bhat_70 							: 14  bits</H4></li>
+<li><H4> bhat_71 							: 14  bits</H4></li>
+<li><H4> bhat_72 							: 14  bits</H4></li>
+<li><H4> bhat_73 							: 14  bits</H4></li>
+<li><H4> bhat_74 							: 14  bits</H4></li>
+<li><H4> bhat_75 							: 14  bits</H4></li>
+<li><H4> bhat_76 							: 14  bits</H4></li>
+<li><H4> bhat_77 							: 14  bits</H4></li>
+<li><H4> bhat_78 							: 14  bits</H4></li>
+<li><H4> bhat_79 							: 14  bits</H4></li>
+<li><H4> bhat_80 							: 14  bits</H4></li>
+<li><H4> bhat_81 							: 14  bits</H4></li>
+<li><H4> bhat_82 							: 14  bits</H4></li>
+<li><H4> bhat_83 							: 14  bits</H4></li>
+<li><H4> bhat_84 							: 14  bits</H4></li>
+<li><H4> bhat_85 							: 14  bits</H4></li>
+<li><H4> bhat_86 							: 14  bits</H4></li>
+<li><H4> bhat_87 							: 14  bits</H4></li>
+<li><H4> bhat_88 							: 14  bits</H4></li>
+<li><H4> bhat_89 							: 14  bits</H4></li>
+</ul>
+</td></tr></table>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="F:/Softwares/MATLAB2017/MATLAB2017/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="F:/Softwares/MATLAB2017/MATLAB2017/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="F:/Softwares/MATLAB2017/MATLAB2017/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="F:/Softwares/MATLAB2017/MATLAB2017/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2017 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+</body>
+</html>

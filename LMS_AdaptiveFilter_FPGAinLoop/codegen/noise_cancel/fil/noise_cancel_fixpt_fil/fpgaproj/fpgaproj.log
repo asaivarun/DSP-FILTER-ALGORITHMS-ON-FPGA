@@ -1,0 +1,14 @@
+
+
+------------------------------------
+   FPGA-in-the-Loop build summary
+------------------------------------
+
+Warning: Design does not meet all timing constraints.
+
+Programming file generated:
+C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/noise_cancel_fixpt_fil.bit
+
+FPGA-in-the-Loop build completed with warning.
+You may close this shell.
+

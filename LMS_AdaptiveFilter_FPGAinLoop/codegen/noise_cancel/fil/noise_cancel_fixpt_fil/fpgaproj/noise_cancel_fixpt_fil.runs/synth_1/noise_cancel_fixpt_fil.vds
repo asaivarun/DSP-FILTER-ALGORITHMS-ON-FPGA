@@ -1,0 +1,1776 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Apr 29 19:14:04 2017
+# Process ID: 4000
+# Current directory: C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1
+# Command line: vivado.exe -log noise_cancel_fixpt_fil.vds -mode batch -messageDb vivado.pb -notrace -source noise_cancel_fixpt_fil.tcl
+# Log file: C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/noise_cancel_fixpt_fil.vds
+# Journal file: C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source noise_cancel_fixpt_fil.tcl -notrace
+Command: synth_design -top noise_cancel_fixpt_fil -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 273.637 ; gain = 67.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'noise_cancel_fixpt_fil' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:26]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'u_clk_wiz_0' of component 'clk_wiz_0' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BSCANE2' declared at 'F:/Softwares/Xilinx_Vivado_SDK_2016.2_0605_1/Vivado/2016.2/scripts/rt/data/unisim_comp.v:422' bound to instance 'u_BSCANE2' of component 'BSCANE2' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'BSCANE2' [F:/Softwares/Xilinx_Vivado_SDK_2016.2_0605_1/Vivado/2016.2/scripts/rt/data/unisim_comp.v:422]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BSCANE2' (1#1) [F:/Softwares/Xilinx_Vivado_SDK_2016.2_0605_1/Vivado/2016.2/scripts/rt/data/unisim_comp.v:422]
+INFO: [Synth 8-3491] module 'jtag_mac' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:13' bound to instance 'u_jtag_mac' of component 'jtag_mac' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'jtag_mac' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:13]
+	Parameter VERSION bound to: 191724 - type: integer 
+	Parameter idle bound to: 15'b000000000000000 
+	Parameter user_rst bound to: 15'b000000000000001 
+	Parameter get_cmd bound to: 15'b000000000000010 
+	Parameter get_wr_len bound to: 15'b000000000000100 
+	Parameter get_sim bound to: 15'b000000000001000 
+	Parameter wr bound to: 15'b000000000010000 
+	Parameter get_rd_len bound to: 15'b000000001000000 
+	Parameter get_skip bound to: 15'b000000010000000 
+	Parameter exe_skip bound to: 15'b000000100000000 
+	Parameter rdbk_len bound to: 15'b000001000000000 
+	Parameter rdbk_dat bound to: 15'b000010000000000 
+	Parameter ver_get_skip bound to: 15'b000100000000000 
+	Parameter ver_exe_skip bound to: 15'b001000000000000 
+	Parameter ver_rdbk_len bound to: 15'b010000000000000 
+	Parameter ver_rdbk_dat bound to: 15'b100000000000000 
+INFO: [Synth 8-638] synthesizing module 'simcycle_fifo_wrapper' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:28]
+INFO: [Synth 8-3491] module 'simcycle_fifo' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/realtime/simcycle_fifo_stub.vhdl:5' bound to instance 'u_simcycle_fifo' of component 'simcycle_fifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'simcycle_fifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/realtime/simcycle_fifo_stub.vhdl:20]
+INFO: [Synth 8-256] done synthesizing module 'simcycle_fifo_wrapper' (2#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'jtag_mac_fifo_wrapper' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:30]
+INFO: [Synth 8-3491] module 'jtag_mac_fifo' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/realtime/jtag_mac_fifo_stub.vhdl:5' bound to instance 'u_jtag_mac_fifo' of component 'jtag_mac_fifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'jtag_mac_fifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/realtime/jtag_mac_fifo_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'jtag_mac_fifo_wrapper' (3#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:30]
+WARNING: [Synth 8-350] instance 'u_pre_chif_fifo' of module 'jtag_mac_fifo_wrapper' requires 11 connections, but only 10 given [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:68]
+WARNING: [Synth 8-567] referenced signal 'wr_len' should be on the sensitivity list [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:187]
+WARNING: [Synth 8-567] referenced signal 'skip_len' should be on the sensitivity list [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:187]
+WARNING: [Synth 8-567] referenced signal 'act_rd_len' should be on the sensitivity list [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:187]
+INFO: [Synth 8-256] done synthesizing module 'jtag_mac' (4#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac.v:13]
+INFO: [Synth 8-3491] module 'mwfil_chiftop' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chiftop.vhd:13' bound to instance 'u_mwfil_chiftop' of component 'mwfil_chiftop' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'mwfil_chiftop' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chiftop.vhd:27]
+	Parameter INWORD bound to: 762 - type: integer 
+	Parameter OUTWORD bound to: 362 - type: integer 
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter HASENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_chifcore' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:15' bound to instance 'u_mwfil_chifcore' of component 'mwfil_chifcore' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chiftop.vhd:1373]
+INFO: [Synth 8-638] synthesizing module 'mwfil_chifcore' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:42]
+	Parameter INWORD bound to: 762 - type: integer 
+	Parameter OUTWORD bound to: 362 - type: integer 
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter HASENABLE bound to: 0 - type: integer 
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 762 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_bus2dut' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_bus2dut.vhd:13' bound to instance 'u_bus2dut' of component 'mwfil_bus2dut' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'mwfil_bus2dut' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_bus2dut.vhd:34]
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 762 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_bus2dut' (5#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_bus2dut.vhd:34]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 6096 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_udfifo' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:14' bound to instance 'u_b2dfifo' of component 'mwfil_udfifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'mwfil_udfifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 6096 - type: integer 
+	Parameter DATA bound to: 6096 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_dpscram' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:12' bound to instance 'u_dpscram' of component 'mwfil_dpscram' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mwfil_dpscram' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+	Parameter DATA bound to: 6096 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_dpscram' (6#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_udfifo' (7#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter HASENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_controller' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_controller.vhd:15' bound to instance 'u_controller' of component 'mwfil_controller' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'mwfil_controller' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_controller.vhd:38]
+	Parameter HASENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_controller' (8#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_controller.vhd:38]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 2896 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_udfifo' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:14' bound to instance 'u_d2bfifo' of component 'mwfil_udfifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'mwfil_udfifo__parameterized1' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 2896 - type: integer 
+	Parameter DATA bound to: 2896 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_dpscram' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:12' bound to instance 'u_dpscram' of component 'mwfil_dpscram' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mwfil_dpscram__parameterized1' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+	Parameter DATA bound to: 2896 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_dpscram__parameterized1' (8#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_udfifo__parameterized1' (8#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 362 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_dut2bus' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dut2bus.vhd:13' bound to instance 'u_dut2bus' of component 'mwfil_dut2bus' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'mwfil_dut2bus' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dut2bus.vhd:34]
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 362 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_dut2bus' (9#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dut2bus.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_chifcore' (10#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chifcore.vhd:42]
+INFO: [Synth 8-3491] module 'noise_cancel_fixpt_wrapper' declared at 'C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_wrapper.v:8' bound to instance 'u_dut' of component 'noise_cancel_fixpt_wrapper' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chiftop.vhd:1394]
+INFO: [Synth 8-638] synthesizing module 'noise_cancel_fixpt_wrapper' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_wrapper.v:8]
+INFO: [Synth 8-638] synthesizing module 'noise_cancel_fixpt' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/hdlsrc/noise_cancel_fixpt.v:28]
+INFO: [Synth 8-256] done synthesizing module 'noise_cancel_fixpt' (11#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/hdlsrc/noise_cancel_fixpt.v:28]
+INFO: [Synth 8-256] done synthesizing module 'noise_cancel_fixpt_wrapper' (12#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_wrapper.v:8]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_chiftop' (13#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_chiftop.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'noise_cancel_fixpt_fil' (14#1) [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:26]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_89[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_90[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_91[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_92[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_93[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_94[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[12]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[11]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[10]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[9]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[8]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[7]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[6]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[5]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[4]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[3]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[2]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[1]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_95[0]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_96[13]
+WARNING: [Synth 8-3331] design noise_cancel_fixpt has unconnected port s_96[12]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 346.906 ; gain = 140.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 346.906 ; gain = 140.426
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'u_clk_wiz_0' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.vhd:115]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'jtag_mac_fifo' instantiated as 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo'. 2 instances of this cell are unresolved black boxes. [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:50]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'simcycle_fifo' instantiated as 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo' [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:46]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Finished Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp_2/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo'
+Finished Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp_2/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo'
+Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp_2/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo'
+Finished Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp_2/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo'
+Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp_3/simcycle_fifo_in_context.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo'
+Finished Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp_3/simcycle_fifo_in_context.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo'
+Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sysclk' already exists, overwriting the previous clock with the same name. [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:1]
+WARNING: [Vivado 12-2489] -period contains time 15.151515 which will be rounded to 15.152 to ensure it is an integer multiple of 1 picosecond [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:4]
+WARNING: [Vivado 12-2489] -waveform contains time 7.575758 which will be rounded to 7.576 to ensure it is an integer multiple of 1 picosecond [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:4]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_clk_wiz_0'. [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:5]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:5]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_clk_wiz_0'. [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:6]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc:6]
+Finished Parsing XDC File [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/noise_cancel_fixpt_fil_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/noise_cancel_fixpt_fil.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/noise_cancel_fixpt_fil_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/noise_cancel_fixpt_fil_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.016 . Memory (MB): peak = 745.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk. (constraint file  C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk. (constraint file  C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/fpgaproj/noise_cancel_fixpt_fil.runs/synth_1/.Xil/Vivado-4000-Sujay/dcp/clk_wiz_0_in_context.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'jtag_mac'
+INFO: [Synth 8-5546] ROM "user_rst_assert" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "post_chif_fifo_rd_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "user_rst_assert" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "post_chif_fifo_rd_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "sm_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "act_wr_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "act_wr_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "act_rd_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "act_rd_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ver_act_rd_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ver_act_rd_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ver_act_rd_len_sft" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ver_act_rd_len_sft" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ver_output_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ver_output_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                  000000000000000
+                 get_cmd |                             0001 |                  000000000000010
+              get_wr_len |                             0010 |                  000000000000100
+                 get_sim |                             0110 |                  000000000001000
+                      wr |                             0111 |                  000000000010000
+              get_rd_len |                             0011 |                  000000001000000
+                get_skip |                             1000 |                  000000010000000
+                exe_skip |                             1010 |                  000000100000000
+                rdbk_len |                             1001 |                  000001000000000
+                rdbk_dat |                             1011 |                  000010000000000
+                user_rst |                             0100 |                  000000000000001
+            ver_get_skip |                             0101 |                  000100000000000
+            ver_exe_skip |                             1101 |                  001000000000000
+            ver_rdbk_len |                             1100 |                  010000000000000
+            ver_rdbk_dat |                             1110 |                  100000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'jtag_mac'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |mwfil_chifcore__GB0         |           1|     36798|
+|2     |mwfil_chifcore__GB1         |           1|     32256|
+|3     |noise_cancel_fixpt_wrapper  |           1|      6513|
+|4     |noise_cancel_fixpt_fil__GC0 |           1|      2053|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register rd_dout_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:43]
+INFO: [Synth 8-3538] Detected potentially large (wide) register reg_out_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:84]
+INFO: [Synth 8-3538] Detected potentially large (wide) register shiftreg_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_bus2dut.vhd:45]
+INFO: [Synth 8-3538] Detected potentially large (wide) register shiftreg_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dut2bus.vhd:70]
+INFO: [Synth 8-3538] Detected potentially large (wide) register rd_dout_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:43]
+INFO: [Synth 8-3538] Detected potentially large (wide) register reg_out_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:84]
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 88    
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 2     
++---Registers : 
+	             6096 Bit    Registers := 3     
+	             2896 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 3     
+	               13 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---RAMs : 
+	              95K Bit         RAMs := 1     
+	              45K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input   6096 Bit        Muxes := 3     
+	   2 Input   2896 Bit        Muxes := 8     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 2     
+	  15 Input     15 Bit        Muxes := 7     
+	   2 Input     14 Bit        Muxes := 12    
+	   2 Input     13 Bit        Muxes := 3     
+	   3 Input     13 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 13    
+	   2 Input     10 Bit        Muxes := 12    
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 1     
+	  38 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register rd_dout_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:43]
+INFO: [Synth 8-3538] Detected potentially large (wide) register reg_out_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:84]
+INFO: [Synth 8-3538] Detected potentially large (wide) register shiftreg_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_bus2dut.vhd:45]
+INFO: [Synth 8-3538] Detected potentially large (wide) register shiftreg_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dut2bus.vhd:70]
+INFO: [Synth 8-3538] Detected potentially large (wide) register rd_dout_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_dpscram.vhd:43]
+INFO: [Synth 8-3538] Detected potentially large (wide) register reg_out_reg [C:/Users/admin/Desktop/bhavesh/codegen/noise_cancel/fil/noise_cancel_fixpt_fil/filsrc/mwfil_udfifo.vhd:84]
+Hierarchical RTL Component report 
+Module mwfil_dpscram 
+Detailed RTL Component Info : 
++---Registers : 
+	             6096 Bit    Registers := 1     
++---RAMs : 
+	              95K Bit         RAMs := 1     
+Module mwfil_udfifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	             6096 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   6096 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module mwfil_bus2dut 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	             6096 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mwfil_dut2bus 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	             2896 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   2896 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mwfil_dpscram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	             2896 Bit    Registers := 1     
++---RAMs : 
+	              45K Bit         RAMs := 1     
+Module mwfil_udfifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	             2896 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   2896 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module mwfil_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module noise_cancel_fixpt 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 88    
+Module jtag_mac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 3     
+	               13 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 2     
+	  15 Input     15 Bit        Muxes := 7     
+	   2 Input     14 Bit        Muxes := 12    
+	   2 Input     13 Bit        Muxes := 3     
+	   3 Input     13 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 13    
+	   2 Input     10 Bit        Muxes := 12    
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 1     
+	  38 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP e_12, operation Mode is: A*B.
+DSP Report: operator e_12 is absorbed into DSP e_12.
+DSP Report: Generating DSP e_11, operation Mode is: A*B.
+DSP Report: operator e_11 is absorbed into DSP e_11.
+DSP Report: Generating DSP e_22, operation Mode is: C+A*B.
+DSP Report: operator e_22 is absorbed into DSP e_22.
+DSP Report: operator e_23 is absorbed into DSP e_22.
+DSP Report: Generating DSP e_21, operation Mode is: A*B.
+DSP Report: operator e_21 is absorbed into DSP e_21.
+DSP Report: Generating DSP e_32, operation Mode is: C+A*B.
+DSP Report: operator e_32 is absorbed into DSP e_32.
+DSP Report: operator e_33 is absorbed into DSP e_32.
+DSP Report: Generating DSP e_31, operation Mode is: A*B.
+DSP Report: operator e_31 is absorbed into DSP e_31.
+DSP Report: Generating DSP e_42, operation Mode is: C+A*B.
+DSP Report: operator e_42 is absorbed into DSP e_42.
+DSP Report: operator e_43 is absorbed into DSP e_42.
+DSP Report: Generating DSP e_41, operation Mode is: A*B.
+DSP Report: operator e_41 is absorbed into DSP e_41.
+DSP Report: Generating DSP e_52, operation Mode is: C+A*B.
+DSP Report: operator e_52 is absorbed into DSP e_52.
+DSP Report: operator e_53 is absorbed into DSP e_52.
+DSP Report: Generating DSP e_51, operation Mode is: A*B.
+DSP Report: operator e_51 is absorbed into DSP e_51.
+DSP Report: Generating DSP e_62, operation Mode is: C+A*B.
+DSP Report: operator e_62 is absorbed into DSP e_62.
+DSP Report: operator e_63 is absorbed into DSP e_62.
+DSP Report: Generating DSP e_61, operation Mode is: A*B.
+DSP Report: operator e_61 is absorbed into DSP e_61.
+DSP Report: Generating DSP e_72, operation Mode is: C+A*B.
+DSP Report: operator e_72 is absorbed into DSP e_72.
+DSP Report: operator e_73 is absorbed into DSP e_72.
+DSP Report: Generating DSP e_71, operation Mode is: A*B.
+DSP Report: operator e_71 is absorbed into DSP e_71.
+DSP Report: Generating DSP e_82, operation Mode is: C+A*B.
+DSP Report: operator e_82 is absorbed into DSP e_82.
+DSP Report: operator e_83 is absorbed into DSP e_82.
+DSP Report: Generating DSP e_81, operation Mode is: A*B.
+DSP Report: operator e_81 is absorbed into DSP e_81.
+DSP Report: Generating DSP e_92, operation Mode is: C+A*B.
+DSP Report: operator e_92 is absorbed into DSP e_92.
+DSP Report: operator e_93 is absorbed into DSP e_92.
+DSP Report: Generating DSP e_91, operation Mode is: A*B.
+DSP Report: operator e_91 is absorbed into DSP e_91.
+DSP Report: Generating DSP e_102, operation Mode is: C+A*B.
+DSP Report: operator e_102 is absorbed into DSP e_102.
+DSP Report: operator e_103 is absorbed into DSP e_102.
+DSP Report: Generating DSP e_101, operation Mode is: A*B.
+DSP Report: operator e_101 is absorbed into DSP e_101.
+DSP Report: Generating DSP e_112, operation Mode is: C+A*B.
+DSP Report: operator e_112 is absorbed into DSP e_112.
+DSP Report: operator e_113 is absorbed into DSP e_112.
+DSP Report: Generating DSP e_111, operation Mode is: A*B.
+DSP Report: operator e_111 is absorbed into DSP e_111.
+DSP Report: Generating DSP e_122, operation Mode is: C+A*B.
+DSP Report: operator e_122 is absorbed into DSP e_122.
+DSP Report: operator e_123 is absorbed into DSP e_122.
+DSP Report: Generating DSP e_121, operation Mode is: A*B.
+DSP Report: operator e_121 is absorbed into DSP e_121.
+DSP Report: Generating DSP e_132, operation Mode is: C+A*B.
+DSP Report: operator e_132 is absorbed into DSP e_132.
+DSP Report: operator e_133 is absorbed into DSP e_132.
+DSP Report: Generating DSP e_131, operation Mode is: A*B.
+DSP Report: operator e_131 is absorbed into DSP e_131.
+DSP Report: Generating DSP e_142, operation Mode is: C+A*B.
+DSP Report: operator e_142 is absorbed into DSP e_142.
+DSP Report: operator e_143 is absorbed into DSP e_142.
+DSP Report: Generating DSP e_141, operation Mode is: A*B.
+DSP Report: operator e_141 is absorbed into DSP e_141.
+DSP Report: Generating DSP e_152, operation Mode is: C+A*B.
+DSP Report: operator e_152 is absorbed into DSP e_152.
+DSP Report: operator e_153 is absorbed into DSP e_152.
+DSP Report: Generating DSP e_151, operation Mode is: A*B.
+DSP Report: operator e_151 is absorbed into DSP e_151.
+DSP Report: Generating DSP e_162, operation Mode is: C+A*B.
+DSP Report: operator e_162 is absorbed into DSP e_162.
+DSP Report: operator e_163 is absorbed into DSP e_162.
+DSP Report: Generating DSP e_161, operation Mode is: A*B.
+DSP Report: operator e_161 is absorbed into DSP e_161.
+DSP Report: Generating DSP e_172, operation Mode is: C+A*B.
+DSP Report: operator e_172 is absorbed into DSP e_172.
+DSP Report: operator e_173 is absorbed into DSP e_172.
+DSP Report: Generating DSP e_171, operation Mode is: A*B.
+DSP Report: operator e_171 is absorbed into DSP e_171.
+DSP Report: Generating DSP e_182, operation Mode is: C+A*B.
+DSP Report: operator e_182 is absorbed into DSP e_182.
+DSP Report: operator e_183 is absorbed into DSP e_182.
+DSP Report: Generating DSP e_181, operation Mode is: A*B.
+DSP Report: operator e_181 is absorbed into DSP e_181.
+DSP Report: Generating DSP e_192, operation Mode is: C+A*B.
+DSP Report: operator e_192 is absorbed into DSP e_192.
+DSP Report: operator e_193 is absorbed into DSP e_192.
+DSP Report: Generating DSP e_191, operation Mode is: A*B.
+DSP Report: operator e_191 is absorbed into DSP e_191.
+DSP Report: Generating DSP e_202, operation Mode is: C+A*B.
+DSP Report: operator e_202 is absorbed into DSP e_202.
+DSP Report: operator e_203 is absorbed into DSP e_202.
+DSP Report: Generating DSP e_201, operation Mode is: A*B.
+DSP Report: operator e_201 is absorbed into DSP e_201.
+DSP Report: Generating DSP e_212, operation Mode is: C+A*B.
+DSP Report: operator e_212 is absorbed into DSP e_212.
+DSP Report: operator e_213 is absorbed into DSP e_212.
+DSP Report: Generating DSP e_211, operation Mode is: A*B.
+DSP Report: operator e_211 is absorbed into DSP e_211.
+DSP Report: Generating DSP e_222, operation Mode is: C+A*B.
+DSP Report: operator e_222 is absorbed into DSP e_222.
+DSP Report: operator e_223 is absorbed into DSP e_222.
+DSP Report: Generating DSP e_221, operation Mode is: A*B.
+DSP Report: operator e_221 is absorbed into DSP e_221.
+DSP Report: Generating DSP e_232, operation Mode is: C+A*B.
+DSP Report: operator e_232 is absorbed into DSP e_232.
+DSP Report: operator e_233 is absorbed into DSP e_232.
+DSP Report: Generating DSP e_231, operation Mode is: A*B.
+DSP Report: operator e_231 is absorbed into DSP e_231.
+DSP Report: Generating DSP e_242, operation Mode is: C+A*B.
+DSP Report: operator e_242 is absorbed into DSP e_242.
+DSP Report: operator e_243 is absorbed into DSP e_242.
+DSP Report: Generating DSP e_241, operation Mode is: A*B.
+DSP Report: operator e_241 is absorbed into DSP e_241.
+DSP Report: Generating DSP e_252, operation Mode is: C+A*B.
+DSP Report: operator e_252 is absorbed into DSP e_252.
+DSP Report: operator e_253 is absorbed into DSP e_252.
+DSP Report: Generating DSP e_251, operation Mode is: A*B.
+DSP Report: operator e_251 is absorbed into DSP e_251.
+DSP Report: Generating DSP e_262, operation Mode is: C+A*B.
+DSP Report: operator e_262 is absorbed into DSP e_262.
+DSP Report: operator e_263 is absorbed into DSP e_262.
+DSP Report: Generating DSP e_261, operation Mode is: A*B.
+DSP Report: operator e_261 is absorbed into DSP e_261.
+DSP Report: Generating DSP e_272, operation Mode is: C+A*B.
+DSP Report: operator e_272 is absorbed into DSP e_272.
+DSP Report: operator e_273 is absorbed into DSP e_272.
+DSP Report: Generating DSP e_271, operation Mode is: A*B.
+DSP Report: operator e_271 is absorbed into DSP e_271.
+DSP Report: Generating DSP e_282, operation Mode is: C+A*B.
+DSP Report: operator e_282 is absorbed into DSP e_282.
+DSP Report: operator e_283 is absorbed into DSP e_282.
+DSP Report: Generating DSP e_281, operation Mode is: A*B.
+DSP Report: operator e_281 is absorbed into DSP e_281.
+DSP Report: Generating DSP e_292, operation Mode is: C+A*B.
+DSP Report: operator e_292 is absorbed into DSP e_292.
+DSP Report: operator e_293 is absorbed into DSP e_292.
+DSP Report: Generating DSP e_291, operation Mode is: A*B.
+DSP Report: operator e_291 is absorbed into DSP e_291.
+DSP Report: Generating DSP e_302, operation Mode is: C+A*B.
+DSP Report: operator e_302 is absorbed into DSP e_302.
+DSP Report: operator e_303 is absorbed into DSP e_302.
+DSP Report: Generating DSP e_301, operation Mode is: A*B.
+DSP Report: operator e_301 is absorbed into DSP e_301.
+DSP Report: Generating DSP e_312, operation Mode is: C+A*B.
+DSP Report: operator e_312 is absorbed into DSP e_312.
+DSP Report: operator e_313 is absorbed into DSP e_312.
+DSP Report: Generating DSP e_311, operation Mode is: A*B.
+DSP Report: operator e_311 is absorbed into DSP e_311.
+DSP Report: Generating DSP e_322, operation Mode is: C+A*B.
+DSP Report: operator e_322 is absorbed into DSP e_322.
+DSP Report: operator e_323 is absorbed into DSP e_322.
+DSP Report: Generating DSP e_321, operation Mode is: A*B.
+DSP Report: operator e_321 is absorbed into DSP e_321.
+DSP Report: Generating DSP e_332, operation Mode is: C+A*B.
+DSP Report: operator e_332 is absorbed into DSP e_332.
+DSP Report: operator e_333 is absorbed into DSP e_332.
+DSP Report: Generating DSP e_331, operation Mode is: A*B.
+DSP Report: operator e_331 is absorbed into DSP e_331.
+DSP Report: Generating DSP e_342, operation Mode is: C+A*B.
+DSP Report: operator e_342 is absorbed into DSP e_342.
+DSP Report: operator e_343 is absorbed into DSP e_342.
+DSP Report: Generating DSP e_341, operation Mode is: A*B.
+DSP Report: operator e_341 is absorbed into DSP e_341.
+DSP Report: Generating DSP e_352, operation Mode is: C+A*B.
+DSP Report: operator e_352 is absorbed into DSP e_352.
+DSP Report: operator e_353 is absorbed into DSP e_352.
+DSP Report: Generating DSP e_351, operation Mode is: A*B.
+DSP Report: operator e_351 is absorbed into DSP e_351.
+DSP Report: Generating DSP e_362, operation Mode is: C+A*B.
+DSP Report: operator e_362 is absorbed into DSP e_362.
+DSP Report: operator e_363 is absorbed into DSP e_362.
+DSP Report: Generating DSP e_361, operation Mode is: A*B.
+DSP Report: operator e_361 is absorbed into DSP e_361.
+DSP Report: Generating DSP e_372, operation Mode is: C+A*B.
+DSP Report: operator e_372 is absorbed into DSP e_372.
+DSP Report: operator e_373 is absorbed into DSP e_372.
+DSP Report: Generating DSP e_371, operation Mode is: A*B.
+DSP Report: operator e_371 is absorbed into DSP e_371.
+DSP Report: Generating DSP e_382, operation Mode is: C+A*B.
+DSP Report: operator e_382 is absorbed into DSP e_382.
+DSP Report: operator e_383 is absorbed into DSP e_382.
+DSP Report: Generating DSP e_381, operation Mode is: A*B.
+DSP Report: operator e_381 is absorbed into DSP e_381.
+DSP Report: Generating DSP e_392, operation Mode is: C+A*B.
+DSP Report: operator e_392 is absorbed into DSP e_392.
+DSP Report: operator e_393 is absorbed into DSP e_392.
+DSP Report: Generating DSP e_391, operation Mode is: A*B.
+DSP Report: operator e_391 is absorbed into DSP e_391.
+DSP Report: Generating DSP e_402, operation Mode is: C+A*B.
+DSP Report: operator e_402 is absorbed into DSP e_402.
+DSP Report: operator e_403 is absorbed into DSP e_402.
+DSP Report: Generating DSP e_401, operation Mode is: A*B.
+DSP Report: operator e_401 is absorbed into DSP e_401.
+DSP Report: Generating DSP e_412, operation Mode is: C+A*B.
+DSP Report: operator e_412 is absorbed into DSP e_412.
+DSP Report: operator e_413 is absorbed into DSP e_412.
+DSP Report: Generating DSP e_411, operation Mode is: A*B.
+DSP Report: operator e_411 is absorbed into DSP e_411.
+DSP Report: Generating DSP e_422, operation Mode is: C+A*B.
+DSP Report: operator e_422 is absorbed into DSP e_422.
+DSP Report: operator e_423 is absorbed into DSP e_422.
+DSP Report: Generating DSP e_421, operation Mode is: A*B.
+DSP Report: operator e_421 is absorbed into DSP e_421.
+DSP Report: Generating DSP e_432, operation Mode is: C+A*B.
+DSP Report: operator e_432 is absorbed into DSP e_432.
+DSP Report: operator e_433 is absorbed into DSP e_432.
+DSP Report: Generating DSP e_431, operation Mode is: A*B.
+DSP Report: operator e_431 is absorbed into DSP e_431.
+DSP Report: Generating DSP e_442, operation Mode is: C+A*B.
+DSP Report: operator e_442 is absorbed into DSP e_442.
+DSP Report: operator e_443 is absorbed into DSP e_442.
+DSP Report: Generating DSP e_441, operation Mode is: A*B.
+DSP Report: operator e_441 is absorbed into DSP e_441.
+DSP Report: Generating DSP e_452, operation Mode is: C+A*B.
+DSP Report: operator e_452 is absorbed into DSP e_452.
+DSP Report: operator e_453 is absorbed into DSP e_452.
+DSP Report: Generating DSP e_451, operation Mode is: A*B.
+DSP Report: operator e_451 is absorbed into DSP e_451.
+DSP Report: Generating DSP e_462, operation Mode is: C+A*B.
+DSP Report: operator e_462 is absorbed into DSP e_462.
+DSP Report: operator e_463 is absorbed into DSP e_462.
+DSP Report: Generating DSP e_461, operation Mode is: A*B.
+DSP Report: operator e_461 is absorbed into DSP e_461.
+DSP Report: Generating DSP e_472, operation Mode is: C+A*B.
+DSP Report: operator e_472 is absorbed into DSP e_472.
+DSP Report: operator e_473 is absorbed into DSP e_472.
+DSP Report: Generating DSP e_471, operation Mode is: A*B.
+DSP Report: operator e_471 is absorbed into DSP e_471.
+DSP Report: Generating DSP e_482, operation Mode is: C+A*B.
+DSP Report: operator e_482 is absorbed into DSP e_482.
+DSP Report: operator e_483 is absorbed into DSP e_482.
+DSP Report: Generating DSP e_481, operation Mode is: A*B.
+DSP Report: operator e_481 is absorbed into DSP e_481.
+DSP Report: Generating DSP e_492, operation Mode is: C+A*B.
+DSP Report: operator e_492 is absorbed into DSP e_492.
+DSP Report: operator e_493 is absorbed into DSP e_492.
+DSP Report: Generating DSP e_491, operation Mode is: A*B.
+DSP Report: operator e_491 is absorbed into DSP e_491.
+DSP Report: Generating DSP e_502, operation Mode is: C+A*B.
+DSP Report: operator e_502 is absorbed into DSP e_502.
+DSP Report: operator e_503 is absorbed into DSP e_502.
+DSP Report: Generating DSP e_501, operation Mode is: A*B.
+DSP Report: operator e_501 is absorbed into DSP e_501.
+DSP Report: Generating DSP e_512, operation Mode is: C+A*B.
+DSP Report: operator e_512 is absorbed into DSP e_512.
+DSP Report: operator e_513 is absorbed into DSP e_512.
+DSP Report: Generating DSP e_511, operation Mode is: A*B.
+DSP Report: operator e_511 is absorbed into DSP e_511.
+DSP Report: Generating DSP e_522, operation Mode is: C+A*B.
+DSP Report: operator e_522 is absorbed into DSP e_522.
+DSP Report: operator e_523 is absorbed into DSP e_522.
+DSP Report: Generating DSP e_521, operation Mode is: A*B.
+DSP Report: operator e_521 is absorbed into DSP e_521.
+DSP Report: Generating DSP e_532, operation Mode is: C+A*B.
+DSP Report: operator e_532 is absorbed into DSP e_532.
+DSP Report: operator e_533 is absorbed into DSP e_532.
+DSP Report: Generating DSP e_531, operation Mode is: A*B.
+DSP Report: operator e_531 is absorbed into DSP e_531.
+DSP Report: Generating DSP e_542, operation Mode is: C+A*B.
+DSP Report: operator e_542 is absorbed into DSP e_542.
+DSP Report: operator e_543 is absorbed into DSP e_542.
+DSP Report: Generating DSP e_541, operation Mode is: A*B.
+DSP Report: operator e_541 is absorbed into DSP e_541.
+DSP Report: Generating DSP e_552, operation Mode is: C+A*B.
+DSP Report: operator e_552 is absorbed into DSP e_552.
+DSP Report: operator e_553 is absorbed into DSP e_552.
+DSP Report: Generating DSP e_551, operation Mode is: A*B.
+DSP Report: operator e_551 is absorbed into DSP e_551.
+DSP Report: Generating DSP e_562, operation Mode is: C+A*B.
+DSP Report: operator e_562 is absorbed into DSP e_562.
+DSP Report: operator e_563 is absorbed into DSP e_562.
+DSP Report: Generating DSP e_561, operation Mode is: A*B.
+DSP Report: operator e_561 is absorbed into DSP e_561.
+DSP Report: Generating DSP e_572, operation Mode is: C+A*B.
+DSP Report: operator e_572 is absorbed into DSP e_572.
+DSP Report: operator e_573 is absorbed into DSP e_572.
+DSP Report: Generating DSP e_571, operation Mode is: A*B.
+DSP Report: operator e_571 is absorbed into DSP e_571.
+DSP Report: Generating DSP e_582, operation Mode is: C+A*B.
+DSP Report: operator e_582 is absorbed into DSP e_582.
+DSP Report: operator e_583 is absorbed into DSP e_582.
+DSP Report: Generating DSP e_581, operation Mode is: A*B.
+DSP Report: operator e_581 is absorbed into DSP e_581.
+DSP Report: Generating DSP e_592, operation Mode is: C+A*B.
+DSP Report: operator e_592 is absorbed into DSP e_592.
+DSP Report: operator e_593 is absorbed into DSP e_592.
+DSP Report: Generating DSP e_591, operation Mode is: A*B.
+DSP Report: operator e_591 is absorbed into DSP e_591.
+DSP Report: Generating DSP e_602, operation Mode is: C+A*B.
+DSP Report: operator e_602 is absorbed into DSP e_602.
+DSP Report: operator e_603 is absorbed into DSP e_602.
+DSP Report: Generating DSP e_601, operation Mode is: A*B.
+DSP Report: operator e_601 is absorbed into DSP e_601.
+DSP Report: Generating DSP e_612, operation Mode is: C+A*B.
+DSP Report: operator e_612 is absorbed into DSP e_612.
+DSP Report: operator e_613 is absorbed into DSP e_612.
+DSP Report: Generating DSP e_611, operation Mode is: A*B.
+DSP Report: operator e_611 is absorbed into DSP e_611.
+DSP Report: Generating DSP e_622, operation Mode is: C+A*B.
+DSP Report: operator e_622 is absorbed into DSP e_622.
+DSP Report: operator e_623 is absorbed into DSP e_622.
+DSP Report: Generating DSP e_621, operation Mode is: A*B.
+DSP Report: operator e_621 is absorbed into DSP e_621.
+DSP Report: Generating DSP e_632, operation Mode is: C+A*B.
+DSP Report: operator e_632 is absorbed into DSP e_632.
+DSP Report: operator e_633 is absorbed into DSP e_632.
+DSP Report: Generating DSP e_631, operation Mode is: A*B.
+DSP Report: operator e_631 is absorbed into DSP e_631.
+DSP Report: Generating DSP e_642, operation Mode is: C+A*B.
+DSP Report: operator e_642 is absorbed into DSP e_642.
+DSP Report: operator e_643 is absorbed into DSP e_642.
+DSP Report: Generating DSP e_641, operation Mode is: A*B.
+DSP Report: operator e_641 is absorbed into DSP e_641.
+DSP Report: Generating DSP e_652, operation Mode is: C+A*B.
+DSP Report: operator e_652 is absorbed into DSP e_652.
+DSP Report: operator e_653 is absorbed into DSP e_652.
+DSP Report: Generating DSP e_651, operation Mode is: A*B.
+DSP Report: operator e_651 is absorbed into DSP e_651.
+DSP Report: Generating DSP e_662, operation Mode is: C+A*B.
+DSP Report: operator e_662 is absorbed into DSP e_662.
+DSP Report: operator e_663 is absorbed into DSP e_662.
+DSP Report: Generating DSP e_661, operation Mode is: A*B.
+DSP Report: operator e_661 is absorbed into DSP e_661.
+DSP Report: Generating DSP e_672, operation Mode is: C+A*B.
+DSP Report: operator e_672 is absorbed into DSP e_672.
+DSP Report: operator e_673 is absorbed into DSP e_672.
+DSP Report: Generating DSP e_671, operation Mode is: A*B.
+DSP Report: operator e_671 is absorbed into DSP e_671.
+DSP Report: Generating DSP e_682, operation Mode is: C+A*B.
+DSP Report: operator e_682 is absorbed into DSP e_682.
+DSP Report: operator e_683 is absorbed into DSP e_682.
+DSP Report: Generating DSP e_681, operation Mode is: A*B.
+DSP Report: operator e_681 is absorbed into DSP e_681.
+DSP Report: Generating DSP e_692, operation Mode is: C+A*B.
+DSP Report: operator e_692 is absorbed into DSP e_692.
+DSP Report: operator e_693 is absorbed into DSP e_692.
+DSP Report: Generating DSP e_691, operation Mode is: A*B.
+DSP Report: operator e_691 is absorbed into DSP e_691.
+DSP Report: Generating DSP e_702, operation Mode is: C+A*B.
+DSP Report: operator e_702 is absorbed into DSP e_702.
+DSP Report: operator e_703 is absorbed into DSP e_702.
+DSP Report: Generating DSP e_701, operation Mode is: A*B.
+DSP Report: operator e_701 is absorbed into DSP e_701.
+DSP Report: Generating DSP e_712, operation Mode is: C+A*B.
+DSP Report: operator e_712 is absorbed into DSP e_712.
+DSP Report: operator e_713 is absorbed into DSP e_712.
+DSP Report: Generating DSP e_711, operation Mode is: A*B.
+DSP Report: operator e_711 is absorbed into DSP e_711.
+DSP Report: Generating DSP e_722, operation Mode is: C+A*B.
+DSP Report: operator e_722 is absorbed into DSP e_722.
+DSP Report: operator e_723 is absorbed into DSP e_722.
+DSP Report: Generating DSP e_721, operation Mode is: A*B.
+DSP Report: operator e_721 is absorbed into DSP e_721.
+DSP Report: Generating DSP e_732, operation Mode is: C+A*B.
+DSP Report: operator e_732 is absorbed into DSP e_732.
+DSP Report: operator e_733 is absorbed into DSP e_732.
+DSP Report: Generating DSP e_731, operation Mode is: A*B.
+DSP Report: operator e_731 is absorbed into DSP e_731.
+DSP Report: Generating DSP e_742, operation Mode is: C+A*B.
+DSP Report: operator e_742 is absorbed into DSP e_742.
+DSP Report: operator e_743 is absorbed into DSP e_742.
+DSP Report: Generating DSP e_741, operation Mode is: A*B.
+DSP Report: operator e_741 is absorbed into DSP e_741.
+DSP Report: Generating DSP e_752, operation Mode is: C+A*B.
+DSP Report: operator e_752 is absorbed into DSP e_752.
+DSP Report: operator e_753 is absorbed into DSP e_752.
+DSP Report: Generating DSP e_751, operation Mode is: A*B.
+DSP Report: operator e_751 is absorbed into DSP e_751.
+DSP Report: Generating DSP e_762, operation Mode is: C+A*B.
+DSP Report: operator e_762 is absorbed into DSP e_762.
+DSP Report: operator e_763 is absorbed into DSP e_762.
+DSP Report: Generating DSP e_761, operation Mode is: A*B.
+DSP Report: operator e_761 is absorbed into DSP e_761.
+DSP Report: Generating DSP e_772, operation Mode is: C+A*B.
+DSP Report: operator e_772 is absorbed into DSP e_772.
+DSP Report: operator e_773 is absorbed into DSP e_772.
+DSP Report: Generating DSP e_771, operation Mode is: A*B.
+DSP Report: operator e_771 is absorbed into DSP e_771.
+DSP Report: Generating DSP e_782, operation Mode is: C+A*B.
+DSP Report: operator e_782 is absorbed into DSP e_782.
+DSP Report: operator e_783 is absorbed into DSP e_782.
+DSP Report: Generating DSP e_781, operation Mode is: A*B.
+DSP Report: operator e_781 is absorbed into DSP e_781.
+DSP Report: Generating DSP e_792, operation Mode is: C+A*B.
+DSP Report: operator e_792 is absorbed into DSP e_792.
+DSP Report: operator e_793 is absorbed into DSP e_792.
+DSP Report: Generating DSP e_791, operation Mode is: A*B.
+DSP Report: operator e_791 is absorbed into DSP e_791.
+DSP Report: Generating DSP e_802, operation Mode is: C+A*B.
+DSP Report: operator e_802 is absorbed into DSP e_802.
+DSP Report: operator e_803 is absorbed into DSP e_802.
+DSP Report: Generating DSP e_801, operation Mode is: A*B.
+DSP Report: operator e_801 is absorbed into DSP e_801.
+DSP Report: Generating DSP e_812, operation Mode is: C+A*B.
+DSP Report: operator e_812 is absorbed into DSP e_812.
+DSP Report: operator e_813 is absorbed into DSP e_812.
+DSP Report: Generating DSP e_811, operation Mode is: A*B.
+DSP Report: operator e_811 is absorbed into DSP e_811.
+DSP Report: Generating DSP e_822, operation Mode is: C+A*B.
+DSP Report: operator e_822 is absorbed into DSP e_822.
+DSP Report: operator e_823 is absorbed into DSP e_822.
+DSP Report: Generating DSP e_821, operation Mode is: A*B.
+DSP Report: operator e_821 is absorbed into DSP e_821.
+DSP Report: Generating DSP e_832, operation Mode is: C+A*B.
+DSP Report: operator e_832 is absorbed into DSP e_832.
+DSP Report: operator e_833 is absorbed into DSP e_832.
+DSP Report: Generating DSP e_831, operation Mode is: A*B.
+DSP Report: operator e_831 is absorbed into DSP e_831.
+DSP Report: Generating DSP e_842, operation Mode is: C+A*B.
+DSP Report: operator e_842 is absorbed into DSP e_842.
+DSP Report: operator e_843 is absorbed into DSP e_842.
+DSP Report: Generating DSP e_841, operation Mode is: A*B.
+DSP Report: operator e_841 is absorbed into DSP e_841.
+DSP Report: Generating DSP e_852, operation Mode is: C+A*B.
+DSP Report: operator e_852 is absorbed into DSP e_852.
+DSP Report: operator e_853 is absorbed into DSP e_852.
+DSP Report: Generating DSP e_851, operation Mode is: A*B.
+DSP Report: operator e_851 is absorbed into DSP e_851.
+DSP Report: Generating DSP e_862, operation Mode is: C+A*B.
+DSP Report: operator e_862 is absorbed into DSP e_862.
+DSP Report: operator e_863 is absorbed into DSP e_862.
+DSP Report: Generating DSP e_861, operation Mode is: A*B.
+DSP Report: operator e_861 is absorbed into DSP e_861.
+DSP Report: Generating DSP e_872, operation Mode is: C+A*B.
+DSP Report: operator e_872 is absorbed into DSP e_872.
+DSP Report: operator e_873 is absorbed into DSP e_872.
+DSP Report: Generating DSP e_871, operation Mode is: A*B.
+DSP Report: operator e_871 is absorbed into DSP e_871.
+DSP Report: Generating DSP e_882, operation Mode is: C+A*B.
+DSP Report: operator e_882 is absorbed into DSP e_882.
+DSP Report: operator e_883 is absorbed into DSP e_882.
+DSP Report: Generating DSP e_881, operation Mode is: A*B.
+DSP Report: operator e_881 is absorbed into DSP e_881.
+DSP Report: Generating DSP bhat_890, operation Mode is: C+A*B.
+DSP Report: operator bhat_890 is absorbed into DSP bhat_890.
+DSP Report: operator bhat_891 is absorbed into DSP bhat_890.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 747.609 ; gain = 541.129
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |mwfil_chifcore__GB0         |           1|     48991|
+|2     |mwfil_chifcore__GB1         |           1|     43843|
+|3     |noise_cancel_fixpt_wrapper  |           1|      6513|
+|4     |noise_cancel_fixpt_fil__GC0 |           1|      2877|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mwfil_dpscram | mem_reg    | 16 x 6096(READ_FIRST)  | W |   | 16 x 6096(WRITE_FIRST) |   | R | Port A and B     | 0      | 85     | 
+|mwfil_dpscram | mem_reg    | 16 x 2896(READ_FIRST)  | W |   | 16 x 2896(WRITE_FIRST) |   | R | Port A and B     | 1      | 40     | 
++--------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 28     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | A*B         | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|noise_cancel_fixpt | C+A*B       | 14     | 14     | 29     | -      | 29     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[30]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[11]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/cs_d1_reg[5] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/cs_d2_reg[5]' (FDR) to 'i_100_2/u_jtag_mac/cs_d1_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[29]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[10]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/cs_d1_reg[5] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/cs_d3_reg[5]' (FDR) to 'i_100_2/u_jtag_mac/cs_d1_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[28]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[9]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/cs_d1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[27]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[8]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[26]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[7]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[25]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[6]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[24]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[5]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[23]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[4]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[22]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[3]' (FDR) to 'i_100_2/u_jtag_mac/ver_act_rd_len_sft_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[21]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_act_rd_len_sft_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[20]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[19]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_100_2/u_jtag_mac/ver_output_reg_reg[18]' (FDR) to 'i_100_2/u_jtag_mac/ver_output_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_100_2/\u_jtag_mac/ver_output_reg_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6095]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6094]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6093]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6092]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6091]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6090]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6089]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6088]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6087]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6086]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6085]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6084]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6083]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6082]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6081]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6080]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6079]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6078]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6077]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6076]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6075]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6074]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6073]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6072]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6071]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6070]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6069]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6068]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6067]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6066]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6065]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6064]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6063]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6062]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6061]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6060]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6059]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6058]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6057]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6056]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6055]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6054]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6053]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6052]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6051]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6050]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6049]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6048]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6047]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6046]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6045]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6044]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6043]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6042]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6041]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6040]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6039]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6038]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6037]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6036]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6035]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6034]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6033]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6032]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6031]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6030]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6029]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6028]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6027]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6026]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6025]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6024]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6023]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6022]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6021]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6020]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6019]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6018]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6017]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6016]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6015]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6014]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6013]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6012]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6011]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6010]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6009]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6008]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6007]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6006]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6005]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6004]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6003]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6002]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6001]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[6000]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[5999]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[5998]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[5997]) is unused and will be removed from module mwfil_udfifo.
+WARNING: [Synth 8-3332] Sequential element (reg_out_reg[5996]) is unused and will be removed from module mwfil_udfifo.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 747.609 ; gain = 541.129
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 747.609 ; gain = 541.129
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |mwfil_chifcore__GB0         |           1|     13718|
+|2     |mwfil_chifcore__GB1         |           1|     23486|
+|3     |noise_cancel_fixpt_wrapper  |           1|      3433|
+|4     |noise_cancel_fixpt_fil__GC0 |           1|      1041|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_0/clk_out1' to pin 'u_clk_wiz_0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'sysclk'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 853.617 ; gain = 647.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:10 ; elapsed = 00:05:14 . Memory (MB): peak = 1121.359 ; gain = 914.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |mwfil_chifcore__GB0         |           1|     13718|
+|2     |mwfil_chifcore__GB1         |           1|     23486|
+|3     |noise_cancel_fixpt_wrapper  |           1|      3433|
+|4     |noise_cancel_fixpt_fil__GC0 |           1|      1041|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_16 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_17 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_18 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_19 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_22 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_23 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_24 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_25 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_26 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_27 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_28 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_29 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_30 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_31 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_32 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_33 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_34 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_35 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_36 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_37 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_38 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_39 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_40 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg_41 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_12 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_13 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_14 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_15 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_16 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_17 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_18 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_19 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_20 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_21 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_22 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_23 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_24 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_25 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_26 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_27 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_28 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_29 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_30 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_31 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_32 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_33 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_34 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_35 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_36 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_37 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_38 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_39 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_40 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:09:02 ; elapsed = 00:09:07 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:09:02 ; elapsed = 00:09:07 . Memory (MB): peak = 1170.477 ; gain = 963.996
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:09:02 ; elapsed = 00:09:07 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:09 ; elapsed = 00:09:13 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:09 ; elapsed = 00:09:13 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:20 ; elapsed = 00:09:24 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:20 ; elapsed = 00:09:25 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:29 ; elapsed = 00:09:33 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:29 ; elapsed = 00:09:34 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name            | RTL Name                                                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mwfil_chifcore__GB0    | NormalBlock.u_bus2dut/shiftreg_reg[3031]                                  | 384    | 8     | NO           | YES                | YES               | 0      | 96      | 
+|noise_cancel_fixpt_fil | u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_bus2dut/shiftreg_reg[1447] | 19     | 8     | NO           | NO                 | YES               | 0      | 8       | 
++-----------------------+---------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |jtag_mac_fifo |         2|
+|3     |simcycle_fifo |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |clk_wiz_0_bbox        |     1|
+|2     |jtag_mac_fifo_bbox    |     1|
+|3     |jtag_mac_fifo_bbox__2 |     1|
+|4     |simcycle_fifo_bbox    |     1|
+|5     |BSCANE2               |     1|
+|6     |BUFG                  |     1|
+|7     |CARRY4                |   468|
+|8     |DSP48E1               |    89|
+|9     |DSP48E1_1             |    88|
+|10    |LUT1                  |   426|
+|11    |LUT2                  |   109|
+|12    |LUT3                  |    66|
+|13    |LUT4                  |  5466|
+|14    |LUT5                  |  1010|
+|15    |LUT6                  |  6193|
+|16    |RAMB18E1              |     1|
+|17    |RAMB36E1              |    80|
+|18    |SRLC32E               |   104|
+|19    |FDRE                  | 11522|
+|20    |FDSE                  |     5|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+------------------------------+------+
+|      |Instance                      |Module                        |Cells |
++------+------------------------------+------------------------------+------+
+|1     |top                           |                              | 25695|
+|2     |  u_jtag_mac                  |jtag_mac                      |   599|
+|3     |    u_post_chif_fifo          |jtag_mac_fifo_wrapper         |    65|
+|4     |    u_pre_chif_fifo           |jtag_mac_fifo_wrapper_0       |    25|
+|5     |    u_simcycle_fifo           |simcycle_fifo_wrapper         |    22|
+|6     |  u_mwfil_chiftop             |mwfil_chiftop                 | 25092|
+|7     |    u_dut                     |noise_cancel_fixpt_wrapper    |   969|
+|8     |      u_noise_cancel_fixpt    |noise_cancel_fixpt            |   969|
+|9     |    u_mwfil_chifcore          |mwfil_chifcore                | 22891|
+|10    |      \NormalBlock.u_b2dfifo  |mwfil_udfifo                  |  5132|
+|11    |        u_dpscram             |mwfil_dpscram                 |  2532|
+|12    |      \NormalBlock.u_bus2dut  |mwfil_bus2dut                 |  3017|
+|13    |      u_controller            |mwfil_controller              |    82|
+|14    |      u_d2bfifo               |mwfil_udfifo__parameterized1  | 11690|
+|15    |        u_dpscram             |mwfil_dpscram__parameterized1 |  8729|
+|16    |      u_dut2bus               |mwfil_dut2bus                 |  2970|
++------+------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:29 ; elapsed = 00:09:34 . Memory (MB): peak = 1170.477 ; gain = 963.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3605 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:09:07 ; elapsed = 00:09:18 . Memory (MB): peak = 1170.477 ; gain = 563.293
+Synthesis Optimization Complete : Time (s): cpu = 00:09:30 ; elapsed = 00:09:34 . Memory (MB): peak = 1170.477 ; gain = 963.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 726 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+361 Infos, 214 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:38 ; elapsed = 00:09:41 . Memory (MB): peak = 1170.477 ; gain = 963.996
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1170.477 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1170.477 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 29 19:23:56 2017...
